@@ -27,7 +27,7 @@ public class TaskControllerTest {
 		MockitoAnnotations.initMocks(this);
 	}
 
-	@Test
+	/*@Test
 	public void naoDeveSalvarTarefaSemDescricao(){
 		Task todo = new Task();
 		todo.setDueDate(LocalDate.now());
@@ -60,7 +60,7 @@ public class TaskControllerTest {
 		} catch (ValidationException e) {
 			Assert.assertEquals("Due date must not be in past", e.getMessage());
 		}
-	}
+	} */
 	@Test
 	public void deveSalvarTarefaComSucesso() throws ValidationException{
 		Task todo = new Task();
